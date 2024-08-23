@@ -16,7 +16,7 @@ while(x !== 0){
    x = Math.floor(x/10);
   
 }
-console.log(reverseNumber);
+console.log(reverseNumber)
 
 
 

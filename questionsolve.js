@@ -38,12 +38,18 @@
 // }
 //     str('dog'); 
 
+ 
+
+// Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word into upper case.
   
-    // //Write a JavaScript function that returns a string that has letters in alphabetical order.
-    function order(x){
-     return x.split('').sort().join("");
-     
-    }
-    console.log(order('webmaster'));
-   
-order( 'webmaster')
+let str = 'HELLO WORLD';
+let letter = str.charAt(0);
+console.log(letter);
+
+let text = 'SIDDHI';
+let text1 = text.charAt(3);
+console.log(text1);
+
+let bigBasket = 'banana';
+let cx = bigBasket.toUpperCase();
+console.log(cx);

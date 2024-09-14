@@ -61,3 +61,47 @@ for(let n = 0; n < z.length; n++){
   }
 }
 console.log(newStr);
+
+// methods of array
+
+let r = [1,2,3,4,5,6];
+let f = r.filter((element)=>{
+if(element%2 == 0){
+    return element;
+}
+})
+console.log(f);
+
+// for each
+
+r.forEach((element)=>{
+console.log(element);
+})
+
+// map
+
+let v = r.map((element)=>{
+return element*2
+})
+console.log(v);
+
+// string methods 
+let s = "actress"
+console.log(s.slice(0,3));
+
+console.log(s.substring(0,3));
+console.log(s.substring(1));
+
+console.log(s.indexOf('r'));
+console.log(s.indexOf('z'));
+
+console.log(s.includes('r'));
+console.log(s.startsWith('ac'));
+console.log(s.startsWith('acr'));
+
+let vowels = ['a', 'e' , 'i' , 'o' , 'u'];
+vowels.includes('a');
+
+let d = ()=>{
+    
+}

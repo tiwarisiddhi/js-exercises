@@ -113,10 +113,7 @@ let p = [
     { name: "Kayne West", age: 16 },
     { name: "Bob Ziroll", age: 100 }
 ]
-// let arry = [];
-// if(age > 18){
-//   arry = arry.push(age);  
-// }
+
 
 let o = p.filter((element)=>{
 if(element.age > 18){
@@ -125,7 +122,7 @@ if(element.age > 18){
 
 })
 
-
+// Q1
 const dx = ["dog", "wolf", "by", "family", "eaten", "camping"];
 let ar = [];
 for(let ab = 0; ab < dx.length; ab++){
@@ -137,6 +134,7 @@ for(let ab = 0; ab < dx.length; ab++){
 }
 console.log(ar);
 
+// Q2
 const members = [
     { name: "Angelina Jolie", member: true },
     { name: "Eric Jones", member: false },
@@ -145,6 +143,7 @@ const members = [
     { name: "Bob Ziroll", member: true }
 ];
 
+// Q3
 let ox = members.filter((l)=>{
 if(l.member !== true){
     return l;
@@ -152,7 +151,7 @@ if(l.member !== true){
 })
 console.log(ox);
 
-// return age is less than 18;
+//Q4 return age is less than 18;
 const yx = [
     { name: "Alice", age: 17 },
     { name: "Bob", age: 25 },
@@ -165,7 +164,7 @@ const yx = [
    }
   })
   console.log(xy);
-
+// Q5
  const na = ["john@doe.com", "jane.doe", "foo@bar.co", "hello@world", "@example.com"];
  let ya = na.filter((att)=>{
  if(att.includes('@')){
@@ -174,6 +173,7 @@ const yx = [
  })
  console.log(ya);
 
+//  Q6
  const palindrome = ["madam", "racecar", "hello", "world", "level"];
  let pl = palindrome.filter((p)=>{
     if(p.split('').reverse().join('') == p){
@@ -182,6 +182,7 @@ const yx = [
  })
  console.log(pl);
 
+//  Q7
  const hobby = [
  { name: "John", hobbies: ["reading", "swimming"] },
  { name: "Alice", hobbies: ["cycling", "cooking"] },

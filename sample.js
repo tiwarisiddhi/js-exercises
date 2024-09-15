@@ -103,5 +103,93 @@ let vowels = ['a', 'e' , 'i' , 'o' , 'u'];
 vowels.includes('a');
 
 let d = ()=>{
-    
+
 }
+
+let p = [
+    { name: "Angelina Jolie", age: 80 },
+    { name: "Eric Jones", age: 2 },
+    { name: "Paris Hilton", age: 5 },
+    { name: "Kayne West", age: 16 },
+    { name: "Bob Ziroll", age: 100 }
+]
+// let arry = [];
+// if(age > 18){
+//   arry = arry.push(age);  
+// }
+
+let o = p.filter((element)=>{
+if(element.age > 18){
+    return element;
+}
+
+})
+
+
+const dx = ["dog", "wolf", "by", "family", "eaten", "camping"];
+let ar = [];
+for(let ab = 0; ab < dx.length; ab++){
+         let ax =  dx[ab].length;
+         if(ax < 5){
+          ar.push(dx[ab])
+         }
+         
+}
+console.log(ar);
+
+const members = [
+    { name: "Angelina Jolie", member: true },
+    { name: "Eric Jones", member: false },
+    { name: "Paris Hilton", member: true },
+    { name: "Kayne West", member: false },
+    { name: "Bob Ziroll", member: true }
+];
+
+let ox = members.filter((l)=>{
+if(l.member !== true){
+    return l;
+}
+})
+console.log(ox);
+
+// return age is less than 18;
+const yx = [
+    { name: "Alice", age: 17 },
+    { name: "Bob", age: 25 },
+    { name: "Charlie", age: 15 },
+    { name: "David", age: 30 }
+  ];
+  let xy = yx.filter((a)=>{
+   if(a.age < 18){
+    return a;
+   }
+  })
+  console.log(xy);
+
+ const na = ["john@doe.com", "jane.doe", "foo@bar.co", "hello@world", "@example.com"];
+ let ya = na.filter((att)=>{
+ if(att.includes('@')){
+    return att;
+ }
+ })
+ console.log(ya);
+
+ const palindrome = ["madam", "racecar", "hello", "world", "level"];
+ let pl = palindrome.filter((p)=>{
+    if(p.split('').reverse().join('') == p){
+        return p;
+    }
+ })
+ console.log(pl);
+
+ const hobby = [
+ { name: "John", hobbies: ["reading", "swimming"] },
+ { name: "Alice", hobbies: ["cycling", "cooking"] },
+ { name: "Bob", hobbies: ["swimming", "cycling"] }
+];
+let h = hobby.filter((hy)=>{
+if(hy.hobbies.includes("swimming") ){
+    return hy;
+}
+})
+console.log(h);

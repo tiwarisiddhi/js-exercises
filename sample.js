@@ -194,3 +194,42 @@ if(hy.hobbies.includes("swimming") ){
 }
 })
 console.log(h);
+
+// 1) Write a function that filters numbers in an array that fall within a specified range (inclusive).
+//  numbers = [10, 15, 20, 25, 30, 35, 40];
+//  min = 20;
+//  max = 35;
+// Expected output: [20, 25, 30, 35]
+
+function range(numbers,min,max){
+    let ry = [];
+for(const n of numbers){
+    if(n >= min && n <= max){
+        ry.push(n);
+        
+    }
+
+}
+return ry;
+}
+console.log(range([10, 15, 20, 25, 30, 35, 40], 20, 35));
+
+//  2) Given an array of users with properties like age, gender, and city, filter out users who are female, under 25, and live in "New York".
+
+const users = [ { name: "Alice", age: 22, gender: "female", city: "New York" }, 
+    { name: "Bob", age: 30, gender: "male", city: "Los Angeles" }, 
+    { name: "Clara", age: 26, gender: "female", city: "New York" }, 
+    { name: "David", age: 24, gender: "male", city: "New York" } ];
+
+// Expected output: [
+//   { name: "Alice", address: { city: "New York", zip: "10001" } },
+//   { name: "David", address: { city: "New York", zip: "10002" } }
+// ]
+
+let cx = users.filter((f)=>{
+ if(f.age < 25 && f.gender == "female" && f.city.includes("New York") ){
+    return f;
+ }
+})
+console.log(cx);
+

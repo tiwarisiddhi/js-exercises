@@ -233,3 +233,187 @@ let cx = users.filter((f)=>{
 })
 console.log(cx);
 
+// 4) Given an array of values, filter out the non-unique (duplicate) values.
+const vals = [1, 2, 2, 3, 4, 4, 5, 6, 7, 7, 8, 9]; 
+// Expected output: [1, 3, 5, 6, 8, 9]
+
+
+
+let arx = {
+     
+
+}
+for (const xb of vals){                  
+if(arx[xb] == undefined){
+    arx[xb] = 1;
+}
+else{
+    arx[xb]++;
+}
+}
+let as = [];
+for(const b of vals){
+   if( arx[b] == 1 ){
+    as.push(b)
+   }
+}
+console.log(as);
+console.log(arx);
+
+
+const matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+  ];
+  for(let r of matrix){
+    for(let rs of r){
+        console.log(rs);
+    }
+  }
+
+  const matrix3D = [
+    [
+      [1, 2, 3], // 1st row of the 1st 2D matrix
+      [4, 5, 6], // 2nd row of the 1st 2D matrix
+      [7, 8, 9]  // 3rd row of the 1st 2D matrix
+    ],
+    [
+      [10, 11, 12], // 1st row of the 2nd 2D matrix
+      [13, 14, 15], // 2nd row of the 2nd 2D matrix
+      [16, 17, 18]  // 3rd row of the 2nd 2D matrix
+    ],
+    [
+      [19, 20, 21], // 1st row of the 3rd 2D matrix
+      [22, 23, 24], // 2nd row of the 3rd 2D matrix
+      [25, 26, 27]  // 3rd row of the 3rd 2D matrix
+    ]
+  ];
+
+  for(let vx of matrix3D){
+    for(let xv of vx){
+        for(let xx of xv){
+            console.log(xx);
+        }
+    }
+  }
+
+  
+  const person = { name: "Alice", age: 25, city: "New York" };
+  console.log(person.age);
+
+  
+  const nestedObjects = [
+    { id: 1, name: "Alice", details: { age: 25, city: "New York" } },
+    { id: 2, name: "Bob", details: { age: 30, city: "Los Angeles" } }
+  ];
+   for(let vc of nestedObjects){
+    console.log(vc.details.age);
+    console.log(vc.details.city);
+   }
+
+
+
+   const companies = [
+    { name: "Company A", employees: [{ age: 25, department: "HR" }, { age: 30, department: "Engineering" }] },
+    { name: "Company B", employees: [{ age: 40, department: "Engineering" }, { age: 35, department: "HR" }] },
+    { name: "Company C", employees: [{ age: 22, department: "HR" }, { age: 27, department: "HR" }] }
+  ];
+  for(let nx of companies){
+    for(let xn of nx.employees){
+        console.log(xn.department);
+    }
+  }
+
+  const data = { user: { profile: { name: "Alice" } } };
+  console.log(data.user.profile.name);
+
+
+  const userData = {
+    user: {
+      profile: {
+        info: { name: "Alice", age: 25 }
+      }
+    }
+  };
+  console.log(userData.user.profile.info.age);
+  userData['user']['profile']['info']['age'];
+  
+
+
+  const book = { title: "1984", author: "George Orwell", year: 1949 };
+  book.author = 'siddhi tiwari';
+  console.log(book);
+  book.credits = 'ashish';
+  console.log(book);
+  delete book.credits;
+  console.log(book);
+  book['credits'] = 'david';
+  console.log(book);
+  
+  
+  let fx = [1,2,3,4,5,6];
+  fx[2] = 0;
+  console.log(fx);
+
+
+  const people = [
+    { name: "Alice", age: 25 },
+    { name: "Bob", age: 30 },
+    { name: "Charlie", age: 22 }
+  ];
+  for(let cb of people){
+    console.log(cb.age);
+    cb['age'] = 100;
+    console.log(cb);
+  }
+
+
+
+  const persons = { name: "Alice", age: 25 };
+  const key = 'age';
+  persons[key];
+
+
+  const products = [
+    { name: "Laptop", price: 1000 },
+    { name: "Phone", price: 800 },
+    { name: "Tablet", price: 600 }
+  ];
+  const k = "price";
+
+   for(let kp of products){
+   console.log(kp[k]);
+   }
+
+   
+   
+   const peopless = [
+    { name: "Alice", age: 25 },
+    { name: "Bob", age: 30 }
+  ];
+  const newKey = "city";
+  const newValue = "New York";
+  
+  for(let pn of peopless){
+ pn[newKey] = newValue
+ console.log(pn);
+  }
+
+//   const dataa = { user: { profile: { name: "Alice", age: 25 } } };
+//   const path = ["user", "profile", "age"];
+//   for(let pu of path){
+//   ;
+//   console.log(pu);
+//   }
+
+const obj = {};
+const keys = ["name", "age", "city"];
+const values = ["John", 30, "London"];
+// final object  {name: "John", age: 30, city: "London" };
+
+for(let f = 0; f < keys.length; f++){
+    
+    obj[keys[f]] = values[f];
+    console.log(obj);
+}

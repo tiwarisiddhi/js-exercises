@@ -414,6 +414,6 @@ const values = ["John", 30, "London"];
 
 for(let f = 0; f < keys.length; f++){
     
-    obj[keys[f]] = values[f];
+    obj[keys[f]] = values[f];  
     console.log(obj);
 }

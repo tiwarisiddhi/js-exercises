@@ -417,3 +417,38 @@ for(let f = 0; f < keys.length; f++){
     obj[keys[f]] = values[f];  
     console.log(obj);
 }
+
+const cars = [
+    { make: "Toyota", model: "Corolla", year: 2020 },
+    { make: "Honda", model: "Civic", year: 2018 },
+    { make: "Ford", model: "Focus", year: 2020 }
+  ];
+  const ke = "year";
+  for(let r of cars){
+    console.log(r[ke]);
+  }
+
+  const numbers = [10, 20, 30];
+  let sum = 0;
+  for(let t of numbers){
+sum = (sum + t)
+  }
+  console.log(sum);
+
+  const nums = [10, 55, 33, 90, 45, 60];
+  let nn = [];
+  for(let n of nums){
+    if(n > 50){
+     nn.push(n);
+    }
+  }
+  console.log(nn);
+  
+  const emails = ["john@doe.com", "jane.doe", "foo@bar.co", "hello@world", "@example.com"];
+  let ary = [];
+  for(let e of emails){
+    if(e.includes('@')){
+    (ary.push(e));
+    }
+  }
+  console.log(ary);

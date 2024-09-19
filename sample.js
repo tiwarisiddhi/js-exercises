@@ -452,3 +452,34 @@ sum = (sum + t)
     }
   }
   console.log(ary);
+
+  const words = ["apple", "banana", "grape", "cherry", "mango"];
+  let aryr = [];
+const char = 'a';
+for(let c of words){
+  if(c.includes('a')){
+    aryr.push(c);
+  }
+}
+console.log(aryr);
+
+
+const arrr = [["name", "John"], ["age", 25], ["city", "New York"]];
+// Expected output: { name: "John", age: 25, city: "New York" }
+let objj = {};
+for(let i of arrr){
+  objj[i[0]] = i[1];
+}
+console.log(objj);
+
+const objo = { name: "Alice", age: 30, city: "London" };
+let ob = [];
+for(let o in objo){
+  // let k = []
+// k.push(o)
+// k.push(objo[o])
+// ob.push(k)
+  ob.push([o, objo[o]]);
+
+}
+console.log(ob);

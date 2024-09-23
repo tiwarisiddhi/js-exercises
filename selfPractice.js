@@ -54,28 +54,38 @@
 //     console.log(student[i]);
 // }
 
-const arr1 = [{ id: 1, name: "John" }, { id: 2, name: "Jane" }];
-const arr2 = [{ id: 1, age: 30 }, { id: 2, age: 25 }];
-let arr3 = [];
-for(let e of arr1){
-arr3.push(e);
-
-}
-for(let a of arr2){
-    arr3.push(a);
-}
-console.log(arr3);
+// 
 
 
-const books = [
-    { title: "1984", author: "George Orwell" },
-    { title: "To Kill a Mockingbird", author: "Harper Lee" }
-  ];
-   const find = ['title', '1984'];
-  // Expected output: { title: "1984", author: "George Orwell" }
+// switch statement :-
 
-for(let e of books){
-   if(e[find[0]] == find[1]){
-    console.log(e);
-   }
+const day = 'saturday';
+switch(day){
+  case 'monday':
+    console.log('plan course structure');
+    console.log('go to coding meetup');
+    break;
+
+    case 'tuesday':
+      console.log('prepare theory videos');
+      break;
+
+    case 'wednesday':
+    case 'thursday':
+      console.log('write code examples');
+      break;
+      
+    case 'friday':
+      console.log('record vidoes');
+      break;
+
+    case 'saturday':
+    case 'sunday':
+      console.log('enjoy the weekend');
+      break;
+
+    default:
+      console.log('not a valid day')  ;
+
+
 }

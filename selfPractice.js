@@ -89,3 +89,20 @@ switch(day){
 
 
 }
+
+function logger(){
+  console.log('my name is siddhi');
+}
+
+logger();
+logger();
+
+
+function fruitProcessor(apples , oranges){
+  console.log(apples , oranges);
+  const juice = `juice with ${apples} apples and ${oranges} oranges.`;
+  return juice;
+}
+console.log(fruitProcessor(5,0));
+console.log(fruitProcessor(10,11));
+fruitProcessor(1,2);

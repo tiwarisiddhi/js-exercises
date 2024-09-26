@@ -66,17 +66,35 @@ console.log(v);
 //    Write a while loop to count the number of digits in a given number. 
 //    For example, for the number 12345, the loop should return 5.
 
+let y = 1;
+while(y <= 4){
+    
+    y++
+    
+}
 
-
-
+console.log(y);
 
 
 // Given an array of numbers, write a while loop to find and print the largest number in the array.
 
-
+let array = [1,2,3,4,5];
+let ar = array.length-1;
+while(ar >= array.length){
+   console.log(ar);
+    ar--
+}
 
 
 
 
 // Write a while loop that prints numbers from 1 to 100, but only if the number is divisible by both 3 and 5.
 
+
+let j = 1;
+while(j <= 100){
+    if(j%3 == 0 && j%5 == 0){
+        console.log(j);
+        j++
+    }
+}

@@ -78,13 +78,18 @@ console.log(y);
 
 // Given an array of numbers, write a while loop to find and print the largest number in the array.
 
-let array = [1,2,3,4,5];
-let ar = array.length-1;
-while(ar >= array.length){
-   console.log(ar);
-    ar--
+let array = [1,2,3,6,4,9];
+let arr = 1;
+let largest = array[0];
+while(arr < array.length){
+if(largest < array[arr]){
+    largest = array[arr]
+}
+arr++;
 }
 
+
+console.log("largest number in the array is:- " , largest);
 
 
 
@@ -94,7 +99,11 @@ while(ar >= array.length){
 let j = 1;
 while(j <= 100){
     if(j%3 == 0 && j%5 == 0){
-        console.log(j);
-        j++
+        console.log("The number divisible by 3 and 5 are:- " ,  j);
+        
     }
+    j++;
 }
+
+
+

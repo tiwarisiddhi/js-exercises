@@ -483,3 +483,12 @@ for(let o in objo){
 
 }
 console.log(ob);
+
+
+const obb = {};
+const keyss = ["name", "age", "city"];
+const valu = ["Bob", null, "Tokyo"];
+for(let o of keyss){
+  
+}
+

@@ -87,3 +87,16 @@ arrow();
 // a('siddhi');
 
 // function w()
+
+// Write a function isEven that takes a number as an argument and returns true if the number is even, and false otherwise.
+
+function isEven(num1){
+    if(num1%2 == 0){
+    return true;
+    }
+    else{
+        return false;
+    }
+    }
+    isEven(2);
+    console.log(isEven(2));

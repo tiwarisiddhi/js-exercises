@@ -1,77 +1,77 @@
-function name(a){
-    return 6 + a
+// function name(a){
+//     return 6 + a
 
-}
+// }
   
 
-let i = 10;
- let total = name(i);
- name(10);
+// let i = 10;
+//  let total = name(i);
+//  name(10);
 
 
  
- total = name(total);
+//  total = name(total);
 
- total = total + 6;
+//  total = total + 6;
 
- C
- function swap(l , p){
-    let dub = l;
-    l = p;
-    p = dub;
+//  C
+//  function swap(l , p){
+//     let dub = l;
+//     l = p;
+//     p = dub;
    
     
-}
+// }
 
  
 
-let a = 10;
-let b = 15;
-swap(a , b);
-let x = 20;
-let y = 25;
+// let a = 10;
+// let b = 15;
+// swap(a , b);
+// let x = 20;
+// let y = 25;
 
-swap(x , y);
-
-
-
-let array = [1 , 10, 15, 2, 3];
-
-array.push(6);
-
-array.push(7);
-
-array.pop();
-
-array.reverse();
-
-array.toString();
+// swap(x , y);
 
 
 
+// let array = [1 , 10, 15, 2, 3];
 
-// anonymous function:-
-let test = function(msg){
-    console.log(msg);
-}
+// array.push(6);
+
+// array.push(7);
+
+// array.pop();
+
+// array.reverse();
+
+// array.toString();
+
+
+
+
+// // anonymous function:-
+// let test = function(msg){
+//     console.log(msg);
+// }
  
  
- test(6);
+//  test(6);
  
-//  named function:-
- function s(a){
-    console.log(a)
- }
+// //  named function:-
+//  function s(a){
+//     console.log(a)
+//  }
   
-s(5);
+// s(5);
 
 
-// arrow function:-
-let arrow = () => {
-    console.log('siddhi');
-}
+// // arrow function:-
+// let arrow = () => {
+//     console.log('siddhi');
+// }
 
-arrow();
+// arrow();
 
 // // higher order function:-
 // function hello(){
@@ -100,3 +100,41 @@ function isEven(num1){
     }
     isEven(2);
     console.log(isEven(2));
+
+    // Write a function that takes an array of numbers and returns the smallest number in the array.
+    let sm = [4,7,2,9,1];
+    let x = [];
+    
+    function f(smallest){
+        if(smallest <= sm.length-1 ){
+            return smallest;
+        }
+        x = [].push(smallest);
+    }
+f(9);
+console.log(x);
+
+// //Write a function that takes an array of strings and returns the longest string.
+// let ay = ['a','bcd','abcd'];
+
+
+// // Write a function that finds the second largest number in an array.
+// let y = [3,4,8,1,2,7];
+// function s(){
+
+// }
+
+// // Write a function that calculates the sum of all numbers in an array.
+ let ey = [3,4,2,5,6,2];
+// let sum = 0;
+// function d(){
+    
+// }
+
+let dv = 0;
+let sum = 0;
+while(dv <= ey.length-1){
+    sum = sum + ey[dv];
+    dv++
+}
+console.log(sum);

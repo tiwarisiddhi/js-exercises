@@ -105,5 +105,30 @@ while(j <= 100){
     j++;
 }
 
+ // Write a while loop that calculates the sum of all numbers in an array.
+ let ey = [3,4,2,5,6,2];
+let dv = 0;
+let sum = 0;
+while(dv <= ey.length-1){
+    sum = sum + ey[dv];
+    dv++
+}
+console.log(sum);
 
 
+
+
+
+// Write a function that takes an array of numbers and returns the smallest number in the array.
+// Write a function that takes an array of strings and returns the longest string.
+// Write a function that calculates the sum of all numbers in an array.
+// Write a function that finds the second largest number in an array.
+// Write a function that takes an object and returns the sum of all its values. Assume all the values are numbers. ex = const data = { a: 10, b: 20, c: 30 };
+
+
+// Given an array of objects where each object has a name and a score, write a function to return the object with the highest score
+// const players = [
+//     { name: 'Alice', score: 85 },
+//     { name: 'Bob', score: 95 },
+//     { name: 'Charlie', score: 78 }
+//   ];

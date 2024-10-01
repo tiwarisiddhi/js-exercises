@@ -114,27 +114,3 @@ function isEven(num1){
 f(9);
 console.log(x);
 
-// //Write a function that takes an array of strings and returns the longest string.
-// let ay = ['a','bcd','abcd'];
-
-
-// // Write a function that finds the second largest number in an array.
-// let y = [3,4,8,1,2,7];
-// function s(){
-
-// }
-
-// // Write a function that calculates the sum of all numbers in an array.
- let ey = [3,4,2,5,6,2];
-// let sum = 0;
-// function d(){
-    
-// }
-
-let dv = 0;
-let sum = 0;
-while(dv <= ey.length-1){
-    sum = sum + ey[dv];
-    dv++
-}
-console.log(sum);

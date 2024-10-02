@@ -102,7 +102,7 @@ function isEven(num1){
     console.log(isEven(2));
 
     // Write a function that takes an array of numbers and returns the smallest number in the array.
-    let sm = [4,7,2,9,1];
+    let sm = [4,7,2,9,0];
     let x = [];
     
     function f(smallest){
@@ -114,3 +114,50 @@ function isEven(num1){
 f(9);
 console.log(x);
 
+// // //Write a function that takes an array of strings and returns the longest string.
+// let ay = ['a','bcd','abcd'];
+// let xc = ""
+
+
+
+
+
+
+
+
+// Given an array of objects where each object has a name and a score, write a function to return the object with the highest score
+const players = [
+    { name: 'Alice', score: 85 },
+    { name: 'Bob', score: 95 },
+    { name: 'Charlie', score: 78 }
+  ];
+  let score = 85;
+function p(alice , bob , charlie){
+
+}
+
+p(85 , 95 , 78)
+
+ // Write a function that calculates the sum of all numbers in an array.
+
+//  let ey = [3,4,2,5,6,2];
+// let dv = 0;
+// let sum = 0;
+// while(dv <= ey.length-1){
+//     sum = sum + ey[dv];
+//     dv++
+// }
+// console.log(sum);
+
+
+function sumOfArray(ey){
+    let dv = 0;
+     let sum = 0;
+     while(dv <= ey.length-1){
+         sum = sum + ey[dv];
+        dv++
+     }
+     return sum;
+}
+console.log(sumOfArray([3,4,2,5,6,2]));
+console.log(sumOfArray([5,6,4,7,2,9]));

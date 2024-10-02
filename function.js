@@ -102,22 +102,43 @@ function isEven(num1){
     console.log(isEven(2));
 
     // Write a function that takes an array of numbers and returns the smallest number in the array.
-    let sm = [4,7,2,9,0];
-    let x = [];
+   
     
-    function f(smallest){
-        if(smallest <= sm.length-1 ){
-            return smallest;
+    
+    function f(arr){
+      let s = 0;
+      let smallest = arr[0];
+      while(s < arr.length){
+        
+        
+        if(smallest > arr[s]){
+            smallest = arr[s];
         }
-        x = [].push(smallest);
+        s++;
+
+      }
+      return smallest;
     }
-f(9);
-console.log(x);
+f([4,7,2,9,0]);
+
 
 // // //Write a function that takes an array of strings and returns the longest string.
 // let ay = ['a','bcd','abcd'];
 // let xc = ""
 
+function longestString(ay){
+    let c = 0;
+    let xc = ay[0];
+    while(c < ay.length){
+        if(xc.length < ay[c].length){
+            xc = ay[c];
+        }
+        c++;
+        
+    }
+return xc;
+}
+console.log(longestString(['abcd', 'a' , 'bcd']));
 
 
 

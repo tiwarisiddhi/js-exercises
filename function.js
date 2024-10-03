@@ -182,3 +182,13 @@ function sumOfArray(ey){
 }
 console.log(sumOfArray([3,4,2,5,6,2]));
 console.log(sumOfArray([5,6,4,7,2,9]));
+
+
+// Write a function that finds the second largest number in an array.
+function secondLargest(l){
+l.sort((a,b)=> a-b);
+// [2,5,6,7,9];
+for(let i = l.length-2; i >= 0 ; i--)
+return l[i];
+}
+secondLargest([5,6,2,9,7]);
